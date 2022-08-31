@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome import -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css"/>
     <title>Puma deo</title>
 </head>
 <body>
-    <div class="imgContainer">
-        <img class="pumaImg" src="/assets/puma-logo.jpeg" alt="puma logo fragrance"/>
-    </div>
+    <!-- Header with logo -->
+    <header>
+        <div class="logoContainer">
+            <img class="pumaImg" src="/assets/puma-logo.jpeg" alt="puma logo fragrance"/>
+        </div>
+    </header>
+    
+    <!-- main div to wrap everything -->
+    <main>
         <div class="container">
             <div class="panel" id="panelOne">
                 <button class="soundButton"><i class="fa-solid fa-volume-xmark"></i></button>
@@ -19,16 +26,29 @@
                     <source src="/assets/video.mp4" type="video/mp4"/>
                 </video>
             </div>
+            <a class="imgLink"href="https://eu.puma.com/fr/fr/home?gclid=Cj0KCQjwjbyYBhCdARIsAArC6LKd4D6nplC3GjwuAM93DpnD7M7k6f6R3-nLzVFqsHIwWetNaLZm1moaAgzQEALw_wcB">
+                <img src="/assets/puma-ad.jpeg" alt="puma ad griezman"/>
+            </a>
+            <div class="promoText">
+                <p>Retrouve ton déodorant préféré au casino</p>
+                <p>77 Avenue de Flandre</p>
+                <p>Paris 19ème!</p>
+            </div>
             <div class="mapsContainer">
-                <div class="maps"></div>
-               <iframe class="iframe" disableDefaultUI src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1311.6929612112833!2d2.3750734!3d48.8889819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dd6cd8eb463%3A0xc619d5155b3d7f7b!2sSupermarch%C3%A9%20Casino!5e0!3m2!1sen!2sfr!4v1661853322494!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- google map iframe -->
+                <iframe class="iframe" pointer-events="none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2152.362270590244!2d2.3742631893119954!3d48.88848485905525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dd6cd8eb463%3A0xc619d5155b3d7f7b!2sSupermarch%C3%A9%20Casino!5e0!3m2!1sen!2sfr!4v1661949464160!5m2!1sen!2sfr" width="80%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-            <footer>
-                <div class="footer">
-                    <button class="discoverBtn"><h2>Découvrir</h2></button>
-                </div>
-            </footer>
+    </main>
+    <!-- Footer who's position is absolute -->
+    <footer>
+        <div class="arrow">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <div class="footer">
+            <button class="discoverBtn"><p>EN PROFITER</p></button>
+        </div>
+
     <script src="script.js"></script>
 </body>
 </html>
